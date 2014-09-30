@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Project 2: Password Generator</title>
-	<link rel='stylesheet' href='style.css' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css">
 	<?php require("logic.php");?>
 </head>
 
