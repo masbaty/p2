@@ -15,7 +15,7 @@
 <body>
 	<h1>xkcd Password Generator</h1>
 	<h2>Your Password</h2>
-	<p>Your password is: </p>
+	<p>Your password is: <?php echo ($password) ? $password : ""; ?> </p>
 
 	<form method="POST" action="index.php">
 
@@ -23,7 +23,7 @@
 			<input type="text" id="count" name="count" /><br />
 
 		<label name="uppercase">Uppercase at beginning of each word?</label>
-			<input type="checkbox" name="uppercase" value="uppercase" /><br />
+			<input type="checkbox" name="uppercase" value="uppercase" <?php echo ($uppercase) ? 'checked="checked"': ""; ?>/><br />
 
 		<label name="symbol">Use any symbols?</label>
 			<input type="checkbox" name="symbol" value="symbol" /><br />
