@@ -2,8 +2,6 @@
 
 	if (isset($_POST["count"])) {
 		$count = $_POST["count"];
-
-		
 	}
 	else {
 		$count = 4;
@@ -46,7 +44,8 @@
 			$max = count($words) - 1;
 			$rand = rand(0,$max);
 
-			$word = $words[$rand];
+			$word = trim ($words[$rand]);	// trim() removes whitespace that is automatically added
+			echo $word . "<br />";
 
 
 			array_push($selected_words,$word);	// Adds item to array
