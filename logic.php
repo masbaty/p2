@@ -3,12 +3,10 @@
 	if (isset($_POST["count"])) {
 		$count = $_POST["count"];
 
-		if (!is_numeric($count)) {
-		echo "nooooooooo";		// Error message
-		}
+		
 	}
 	else {
-		$count = 1;
+		$count = 4;
 	}
 
 	if (isset($_POST["uppercase"])) {
@@ -50,7 +48,6 @@
 
 			$word = $words[$rand];
 
-			//echo $word . "<br />";
 
 			array_push($selected_words,$word);	// Adds item to array
 		}
@@ -60,26 +57,35 @@
 			// Loop through words and change first letter to uppercase
 			foreach ($selected_words as $index => $word) {
 				$selected_words[$index] = ucfirst($word);
-				echo $selected_words[$index];
+				//echo $selected_words[$index];
 			}
 		}
+
+		$endofarray = count($selected_words) - 1;
 
 		if ($symbol) {
 			// Add random symbol to end of array
 			$rand = rand(0,count($symbols)-1);
 			$symbol = $symbols[$rand];
-			array_push($selected_words,$symbol);
+			$selected_words[$endofarray] = $selected_words[$endofarray] . $symbol;
 		}
 
 		if ($number) {
 			// Add random number to end of array
 			$rand = rand(0,count($numbers)-1);
 			$number = $numbers[$rand];
-			array_push($selected_words,$number);
+			$selected_words[$endofarray] = $selected_words[$endofarray] . $number;
 		}
 
 
 		$password = implode("-",$selected_words);
+
+		if ($count > 9) {
+			$password = "ERROR: Can a human even remember a password like that?";
+		}
+		if (!is_numeric($count)) {
+			$password = "ERROR: Your count needs to be numeric.";		// Error message
+		}
 
 	}
 
