@@ -8,6 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Project 2: Password Generator</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<?php require("logic.php");?>
 </head>
@@ -33,6 +34,16 @@
 
 		<input type="submit" name="submit" value="submit" />
 	</form>
+
+	<br />
+	
+	<div id="xkcd">
+		<a href="http://xkcd.com/936"><img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd Password Strength Comic" /></a>
+
+		<p>
+			This password generator is based on an idea proposed by Randall Munroe in his popular webcomic "xkcd". Randall makes a point that we typically use passwords that are difficult to remember, but easy for a computer to crack due to the low number of guesses it takes to figure it out. Instead, we should strive for passwords made up of normal words. In this way, the password is much longer and more difficult to guess, but at the same time easier for humans to remember since it's not just a random mess of letters, numbers, and symbols.
+		</p>
+	</div>
 
 </body>
 </html>
