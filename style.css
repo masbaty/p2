@@ -1,8 +1,23 @@
 body {
-	
+	background-color: #8B4513;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.container {
+	background-color: #FAF0E6;
+	margin-left,margin-right: 25%;
+}
+
+#password {
+}
+#password span {
+	background-color: #FFFFFF;
+	color: #FF0000;
+	padding: 10px;
 }
 
 #xkcd img {
-	width: 50%;
-	max-width: 500px;
+	width: 500px;
+	padding: 25px;
 }

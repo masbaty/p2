@@ -13,7 +13,7 @@ In this project, I created a password generator in the style suggested by the we
 This project has been tested in the following browsers: Chrome, Firefox, and Internet Explorer.
 
 ## Outside Code
-Bootstrap is used for extra styling. It it linked to with the following URL: 
+Bootstrap is used for extra styling. It is linked to with the following URL: 
 https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
 
 The list of words contains 10,000 of the most commonly used English words according to an analysis of Google's statistics. This list was found at the following source:
