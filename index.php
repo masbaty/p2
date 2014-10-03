@@ -16,7 +16,7 @@
 
 		<form method="POST" action="index.php">
 
-			<label for="count">How many words?</label>
+			<label for="count">How many words? (maximum 9)</label>
 				<input type="text" id="count" name="count" <?php echo ($count) ? "value=$count": ""; ?> /><br />
 
 			<label for="uppercase">Uppercase at beginning of each word?</label>

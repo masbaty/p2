@@ -43,7 +43,6 @@
 
 			$word = trim ($words[$rand]);	// trim() removes whitespace that is automatically added
 
-
 			array_push($selected_words,$word);	// Adds item to array
 		}
 	
@@ -52,7 +51,6 @@
 			// Loop through words and change first letter to uppercase
 			foreach ($selected_words as $index => $word) {
 				$selected_words[$index] = ucfirst($word);
-				//echo $selected_words[$index];
 			}
 		}
 
@@ -76,21 +74,9 @@
 		$password = implode("-",$selected_words);
 
 		if ($count > 9) {
-			$password = "ERROR: Can a human even remember a password like that?";
+			$password = "ERROR: Too long. Please choose 9 words or less.";
 		}
 		if (!is_numeric($count)) {
 			$password = "ERROR: Your count needs to be numeric.";		// Error message
 		}
-
 	}
-
-	# Pull data from form
-
-
-	# Run logic on form input
-
-
-	# Update variables to send back
-
-
-	# Cleanup with helper functions
