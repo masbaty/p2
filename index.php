@@ -20,13 +20,13 @@
 				<input type="text" id="count" name="count" <?php echo ($count) ? "value=$count": ""; ?> /><br />
 
 			<label for="uppercase">Uppercase at beginning of each word?</label>
-				<input type="checkbox" name="uppercase" value="uppercase" <?php echo ($uppercase) ? 'checked="checked"': ""; ?>/><br />
+				<input type="checkbox" id="uppercase" name="uppercase" value="uppercase" <?php echo ($uppercase) ? 'checked="checked"': ""; ?>/><br />
 
 			<label for="symbol">Use any symbols?</label>
-				<input type="checkbox" name="symbol" value="symbol" <?php echo ($symbol) ? 'checked="checked"': ""; ?>/><br />
+				<input type="checkbox" id="symbol" name="symbol" value="symbol" <?php echo ($symbol) ? 'checked="checked"': ""; ?>/><br />
 
 			<label for="number">Include a number?</label>
-				<input type="checkbox" name="number" value="number" <?php echo ($number) ? 'checked="checked"': ""; ?>/><br />
+				<input type="checkbox" id="number" name="number" value="number" <?php echo ($number) ? 'checked="checked"': ""; ?>/><br />
 
 			<input type="submit" name="submit" value="submit" />
 		</form>
