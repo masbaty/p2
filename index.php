@@ -16,16 +16,16 @@
 
 		<form method="POST" action="index.php">
 
-			<label name="count">How many words?</label>
+			<label for="count">How many words?</label>
 				<input type="text" id="count" name="count" <?php echo ($count) ? "value=$count": ""; ?> /><br />
 
-			<label name="uppercase">Uppercase at beginning of each word?</label>
+			<label for="uppercase">Uppercase at beginning of each word?</label>
 				<input type="checkbox" name="uppercase" value="uppercase" <?php echo ($uppercase) ? 'checked="checked"': ""; ?>/><br />
 
-			<label name="symbol">Use any symbols?</label>
+			<label for="symbol">Use any symbols?</label>
 				<input type="checkbox" name="symbol" value="symbol" <?php echo ($symbol) ? 'checked="checked"': ""; ?>/><br />
 
-			<label name="number">Include a number?</label>
+			<label for="number">Include a number?</label>
 				<input type="checkbox" name="number" value="number" <?php echo ($number) ? 'checked="checked"': ""; ?>/><br />
 
 			<input type="submit" name="submit" value="submit" />
